@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Childcare Hourly Fees by Service Type and State",
+  "data": { "url": "data/hourly_fees.csv" },
+  "background": "#b7c9e2",
+  "width": "container",
+  "height": 300,
+
+  "mark": "rect",
+
+  "encoding": {
+    "x": {
+      "field": "State",
+      "type": "nominal",
+      "title": "State/Territory",
+      "sort": ["NSW","VIC","QLD","SA","WA","TAS","NT","ACT"],
+      "axis": {"labelAngle": -20}
+    },
+    "y": {
+      "field": "ServiceType",
+      "type": "nominal",
+      "title": "Service Type"
+    },
+    "color": {
+      "field": "HourlyFee",
+      "type": "quantitative",
+      "title": "Hourly Fee ($)",
+      "scale": {"scheme": "blues"}
+    },
+    "tooltip": [
+      {"field": "ServiceType", "type": "nominal"},
+      {"field": "State", "type": "nominal"},
+      {"field": "HourlyFee", "type": "quantitative", "format": "$.2f"}
+    ]
+  },
+
+  "config": {
+    "axis": {"labelFontSize": 11, "titleFontSize": 12},
+    "view": {"stroke": "transparent"}
+  }
+}

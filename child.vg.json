@@ -1,0 +1,105 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Services vs Children by Region",
+  "width": "container",
+  "height": 420,
+  "background": "#b7c9e2",
+  
+
+  "data": { "url": "data/services_children.csv" },
+
+  "params": [
+    {
+      "name": "FocusState",
+      "value": "all",
+      "bind": {
+        "input": "select",
+        "name": "State: ",
+        "options": ["all","NSW","VIC","QLD","SA","WA","TAS","NT","ACT"]
+      }
+    },
+    {
+      "name": "ShowOutlier",
+      "value": true,
+      "bind": { "input": "checkbox", "name": " Show Outlier: Wyndham" }
+    }
+  ],
+
+  "transform": [
+    { "filter": "isValid(datum.children) && isValid(datum.services)" },
+    { "filter": "FocusState == 'all' || datum.state == FocusState" },
+    { "filter": "ShowOutlier || datum.region != 'Wyndham'" }
+
+  
+  ],
+
+  "layer": [
+    {
+      "transform": [
+        {
+          "aggregate": [
+            { "op": "median", "field": "children", "as": "med_children" },
+            { "op": "median", "field": "services", "as": "med_services" }
+          ]
+        }
+      ],
+      "mark": { "type": "rule", "stroke": "#bbb" },
+      "encoding": {
+        "x": { "field": "med_children", "type": "quantitative" }
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [
+            { "op": "median", "field": "children", "as": "med_children" },
+            { "op": "median", "field": "services", "as": "med_services" }
+          ]
+        }
+      ],
+      "mark": { "type": "rule", "stroke": "#bbb" },
+      "encoding": {
+        "y": { "field": "med_services", "type": "quantitative" }
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "boxSel",
+          "select": { "type": "interval", "encodings": ["x","y"] }
+        }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 60 },
+      "encoding": {
+        "x": { "field": "children", "type": "quantitative", "title": "Children" },
+        "y": { "field": "services", "type": "quantitative", "title": "Services" },
+        "size": {
+          "field": "families",
+          "type": "quantitative",
+          "title": "Families",
+          "legend": { "format": "~s" }
+        },
+        "color": {
+          "field": "state",
+          "type": "nominal",
+          "legend": { "title": "State" },
+          "scale": {
+            "domain": ["NSW","VIC","QLD","SA","WA","TAS","NT","ACT"],
+            "range": ["#1f77b4","#ff7f0e","#2ca02c","#d62728","#9467bd","#8c564b","#e377c2","#7f7f7f"]
+          }
+        },
+        "opacity": { "condition": { "param": "boxSel", "value": 1 }, "value": 0.25 },
+        "tooltip": [
+          { "field": "region", "title": "Region" },
+          { "field": "state", "title": "State" },
+          { "field": "children", "title": "Children", "format": "~s" },
+          { "field": "families", "title": "Families", "format": "~s" },
+          { "field": "services", "title": "Services", "format": "~s" }
+        ]
+      }
+    }
+  ],
+
+  "autosize": { "type": "fit", "contains": "padding" },
+  "config": { "view": { "stroke": null } }
+}

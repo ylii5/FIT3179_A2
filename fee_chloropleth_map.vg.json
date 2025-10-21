@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Average Childcare Cost by State",
+  "width": 900,
+  "height": 560,
+  "background": "#b7c9e2",
+  "config": { "view": { "stroke": null } },
+  "projection": { "type": "mercator" },
+
+  "layer": [
+    {
+      "data": {
+        "url": "data/states.json",
+        "format": { "type": "topojson", "feature": "STE_2021_AUST_GDA2020" }
+      },
+      "transform": [
+        { "calculate": "datum.properties.STE_CODE21", "as": "state_code" },
+        { "calculate": "datum.properties.STE_NAME21", "as": "state_name" },
+        {
+          "lookup": "state_code",
+          "from": {
+            "data": { "url": "data/avg_fees.csv" },
+            "key": "state",
+            "fields": ["Total"]
+          }
+        }
+      ],
+      "mark": { "type": "geoshape", "stroke": "white", "strokeWidth": 0.8 },
+      "encoding": {
+        "color": { "field": "Total", "type": "quantitative", "title": "Avg weekly fee ($)" },
+        "tooltip": [
+          { "field": "state_name", "title": "State" },
+          { "field": "Total", "title": "Avg weekly fee ($)", "format": ".2f" }
+        ]
+      }
+    },
+    {
+      "data": {
+        "graticule": {
+          "step": [10, 10],
+          "extent": [[110, -45], [155, -10]]   
+        }
+      },
+      "mark": { "type": "geoshape", "fill": null, "stroke": "#bfbfbf", "strokeWidth": 0.6 }
+    }
+  ]
+}

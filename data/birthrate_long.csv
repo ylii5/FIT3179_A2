@@ -1,0 +1,949 @@
+lga_code,lga_name,year,birth_rate
+20110,Alpine,2013,1.81
+20260,Ararat,2013,2.27
+20570,Ballarat,2013,1.99
+20660,Banyule,2013,1.91
+20740,Bass Coast,2013,2.29
+20830,Baw Baw,2013,2.1
+20910,Bayside (Vic.),2013,1.75
+21010,Benalla,2013,1.98
+21110,Boroondara,2013,1.41
+21180,Brimbank,2013,1.95
+21270,Buloke,2013,2.05
+21370,Campaspe,2013,2.31
+21450,Cardinia,2013,2.28
+21610,Casey,2013,2.07
+21670,Central Goldfields,2013,2.3
+21750,Colac Otway,2013,2.43
+21830,Corangamite,2013,2.47
+21890,Darebin,2013,1.62
+22110,East Gippsland,2013,2.39
+22170,Frankston,2013,2
+22250,Gannawarra,2013,2.27
+22310,Glen Eira,2013,1.66
+22410,Glenelg,2013,2.11
+22490,Golden Plains,2013,2.27
+22620,Greater Bendigo,2013,2.04
+22670,Greater Dandenong,2013,2.03
+22750,Greater Geelong,2013,1.93
+22830,Greater Shepparton,2013,2.33
+22910,Hepburn,2013,2.19
+22980,Hindmarsh,2013,2.35
+23110,Hobsons Bay,2013,2.02
+23190,Horsham,2013,2.22
+23270,Hume,2013,2.13
+23350,Indigo,2013,2.2
+23430,Kingston (Vic.),2013,1.8
+23670,Knox,2013,1.76
+23810,Latrobe (Vic.),2013,2.06
+23940,Loddon,2013,2.59
+24130,Macedon Ranges,2013,1.99
+24210,Manningham,2013,1.53
+24250,Mansfield,2013,2.22
+24330,Maribyrnong,2013,1.82
+24410,Maroondah,2013,1.88
+24600,Melbourne,2013,0.92
+24650,Melton,2013,2.13
+24700,Merri-bek,2013,1.62
+24780,Mildura,2013,2.3
+24850,Mitchell,2013,2.28
+24900,Moira,2013,2.45
+24970,Monash,2013,1.53
+25060,Moonee Valley,2013,1.58
+25150,Moorabool,2013,2.03
+25340,Mornington Peninsula,2013,2.02
+25430,Mount Alexander,2013,2.04
+25490,Moyne,2013,2.41
+25620,Murrindindi,2013,2.03
+25710,Nillumbik,2013,1.82
+25810,Northern Grampians,2013,2.05
+25900,Port Phillip,2013,1.16
+25990,Pyrenees,2013,2.29
+26080,Queenscliffe,2013,1.55
+26170,South Gippsland,2013,2.28
+26260,Southern Grampians,2013,2.19
+26350,Stonnington,2013,1.16
+26430,Strathbogie,2013,2.09
+26490,Surf Coast,2013,2.01
+26610,Swan Hill,2013,2.62
+26670,Towong,2013,2.08
+26700,Wangaratta,2013,2.18
+26730,Warrnambool,2013,1.9
+26810,Wellington,2013,2.14
+26890,West Wimmera,2013,2.28
+26980,Whitehorse,2013,1.69
+27070,Whittlesea,2013,2
+27170,Wodonga,2013,2.18
+27260,Wyndham,2013,2.27
+27350,Yarra,2013,1.21
+27450,Yarra Ranges,2013,1.96
+27630,Yarriambiack,2013,2.48
+20110,Alpine,2014,1.79
+20260,Ararat,2014,2.26
+20570,Ballarat,2014,1.98
+20660,Banyule,2014,1.85
+20740,Bass Coast,2014,2.26
+20830,Baw Baw,2014,2.09
+20910,Bayside (Vic.),2014,1.76
+21010,Benalla,2014,2.13
+21110,Boroondara,2014,1.36
+21180,Brimbank,2014,1.93
+21270,Buloke,2014,2.21
+21370,Campaspe,2014,2.33
+21450,Cardinia,2014,2.24
+21610,Casey,2014,2.07
+21670,Central Goldfields,2014,2.22
+21750,Colac Otway,2014,2.24
+21830,Corangamite,2014,2.39
+21890,Darebin,2014,1.6
+22110,East Gippsland,2014,2.3
+22170,Frankston,2014,1.98
+22250,Gannawarra,2014,2.37
+22310,Glen Eira,2014,1.63
+22410,Glenelg,2014,2.12
+22490,Golden Plains,2014,2.32
+22620,Greater Bendigo,2014,2.02
+22670,Greater Dandenong,2014,2.03
+22750,Greater Geelong,2014,1.94
+22830,Greater Shepparton,2014,2.3
+22910,Hepburn,2014,2.15
+22980,Hindmarsh,2014,2.3
+23110,Hobsons Bay,2014,1.97
+23190,Horsham,2014,2.2
+23270,Hume,2014,2.14
+23350,Indigo,2014,2.05
+23430,Kingston (Vic.),2014,1.75
+23670,Knox,2014,1.74
+23810,Latrobe (Vic.),2014,2.05
+23940,Loddon,2014,2.64
+24130,Macedon Ranges,2014,2
+24210,Manningham,2014,1.5
+24250,Mansfield,2014,2.21
+24330,Maribyrnong,2014,1.8
+24410,Maroondah,2014,1.87
+24600,Melbourne,2014,0.87
+24650,Melton,2014,2.09
+24700,Merri-bek,2014,1.6
+24780,Mildura,2014,2.24
+24850,Mitchell,2014,2.25
+24900,Moira,2014,2.43
+24970,Monash,2014,1.51
+25060,Moonee Valley,2014,1.54
+25150,Moorabool,2014,2.12
+25340,Mornington Peninsula,2014,2.01
+25430,Mount Alexander,2014,2.03
+25490,Moyne,2014,2.3
+25620,Murrindindi,2014,2.1
+25710,Nillumbik,2014,1.72
+25810,Northern Grampians,2014,2.06
+25900,Port Phillip,2014,1.15
+25990,Pyrenees,2014,2.26
+26080,Queenscliffe,2014,1.67
+26170,South Gippsland,2014,2.32
+26260,Southern Grampians,2014,2.16
+26350,Stonnington,2014,1.15
+26430,Strathbogie,2014,2.03
+26490,Surf Coast,2014,1.9
+26610,Swan Hill,2014,2.49
+26670,Towong,2014,2.02
+26700,Wangaratta,2014,2.05
+26730,Warrnambool,2014,1.89
+26810,Wellington,2014,2.09
+26890,West Wimmera,2014,2.24
+26980,Whitehorse,2014,1.67
+27070,Whittlesea,2014,2.05
+27170,Wodonga,2014,2.19
+27260,Wyndham,2014,2.29
+27350,Yarra,2014,1.2
+27450,Yarra Ranges,2014,1.93
+27630,Yarriambiack,2014,2.12
+20110,Alpine,2015,1.73
+20260,Ararat,2015,2.11
+20570,Ballarat,2015,1.94
+20660,Banyule,2015,1.79
+20740,Bass Coast,2015,2.11
+20830,Baw Baw,2015,2.05
+20910,Bayside (Vic.),2015,1.72
+21010,Benalla,2015,1.99
+21110,Boroondara,2015,1.32
+21180,Brimbank,2015,1.87
+21270,Buloke,2015,2.29
+21370,Campaspe,2015,2.27
+21450,Cardinia,2015,2.12
+21610,Casey,2015,1.97
+21670,Central Goldfields,2015,2.05
+21750,Colac Otway,2015,2.13
+21830,Corangamite,2015,2.25
+21890,Darebin,2015,1.5
+22110,East Gippsland,2015,2.15
+22170,Frankston,2015,1.9
+22250,Gannawarra,2015,2.31
+22310,Glen Eira,2015,1.56
+22410,Glenelg,2015,2.11
+22490,Golden Plains,2015,2.19
+22620,Greater Bendigo,2015,1.9
+22670,Greater Dandenong,2015,1.94
+22750,Greater Geelong,2015,1.89
+22830,Greater Shepparton,2015,2.19
+22910,Hepburn,2015,2.01
+22980,Hindmarsh,2015,2.02
+23110,Hobsons Bay,2015,1.91
+23190,Horsham,2015,2.16
+23270,Hume,2015,2.05
+23350,Indigo,2015,1.94
+23430,Kingston (Vic.),2015,1.71
+23670,Knox,2015,1.65
+23810,Latrobe (Vic.),2015,1.93
+23940,Loddon,2015,2.44
+24130,Macedon Ranges,2015,1.94
+24210,Manningham,2015,1.45
+24250,Mansfield,2015,2.2
+24330,Maribyrnong,2015,1.68
+24410,Maroondah,2015,1.86
+24600,Melbourne,2015,0.84
+24650,Melton,2015,1.99
+24700,Merri-bek,2015,1.54
+24780,Mildura,2015,2.1
+24850,Mitchell,2015,2.04
+24900,Moira,2015,2.32
+24970,Monash,2015,1.43
+25060,Moonee Valley,2015,1.47
+25150,Moorabool,2015,1.99
+25340,Mornington Peninsula,2015,1.89
+25430,Mount Alexander,2015,2
+25490,Moyne,2015,2.25
+25620,Murrindindi,2015,1.94
+25710,Nillumbik,2015,1.64
+25810,Northern Grampians,2015,1.95
+25900,Port Phillip,2015,1.11
+25990,Pyrenees,2015,2.22
+26080,Queenscliffe,2015,1.8
+26170,South Gippsland,2015,2.27
+26260,Southern Grampians,2015,2.12
+26350,Stonnington,2015,1.09
+26430,Strathbogie,2015,1.98
+26490,Surf Coast,2015,1.81
+26610,Swan Hill,2015,2.34
+26670,Towong,2015,2.08
+26700,Wangaratta,2015,1.97
+26730,Warrnambool,2015,1.78
+26810,Wellington,2015,2
+26890,West Wimmera,2015,2.24
+26980,Whitehorse,2015,1.58
+27070,Whittlesea,2015,1.97
+27170,Wodonga,2015,2.07
+27260,Wyndham,2015,2.2
+27350,Yarra,2015,1.13
+27450,Yarra Ranges,2015,1.86
+27630,Yarriambiack,2015,2.12
+20110,Alpine,2016,1.78
+20260,Ararat,2016,2.07
+20570,Ballarat,2016,1.91
+20660,Banyule,2016,1.83
+20740,Bass Coast,2016,2.16
+20830,Baw Baw,2016,2.14
+20910,Bayside (Vic.),2016,1.72
+21010,Benalla,2016,1.92
+21110,Boroondara,2016,1.34
+21180,Brimbank,2016,1.9
+21270,Buloke,2016,2.24
+21370,Campaspe,2016,2.21
+21450,Cardinia,2016,2.14
+21610,Casey,2016,2.04
+21670,Central Goldfields,2016,2.02
+21750,Colac Otway,2016,2.14
+21830,Corangamite,2016,2.25
+21890,Darebin,2016,1.5
+22110,East Gippsland,2016,2.2
+22170,Frankston,2016,1.94
+22250,Gannawarra,2016,2.4
+22310,Glen Eira,2016,1.59
+22410,Glenelg,2016,2.16
+22490,Golden Plains,2016,2.2
+22620,Greater Bendigo,2016,1.91
+22670,Greater Dandenong,2016,1.99
+22750,Greater Geelong,2016,1.87
+22830,Greater Shepparton,2016,2.21
+22910,Hepburn,2016,1.99
+22980,Hindmarsh,2016,1.83
+23110,Hobsons Bay,2016,1.96
+23190,Horsham,2016,2.16
+23270,Hume,2016,2.08
+23350,Indigo,2016,1.93
+23430,Kingston (Vic.),2016,1.72
+23670,Knox,2016,1.68
+23810,Latrobe (Vic.),2016,1.93
+23940,Loddon,2016,2.34
+24130,Macedon Ranges,2016,2.06
+24210,Manningham,2016,1.47
+24250,Mansfield,2016,2.24
+24330,Maribyrnong,2016,1.63
+24410,Maroondah,2016,1.87
+24600,Melbourne,2016,0.87
+24650,Melton,2016,2.03
+24700,Merri-bek,2016,1.56
+24780,Mildura,2016,2.14
+24850,Mitchell,2016,2.1
+24900,Moira,2016,2.28
+24970,Monash,2016,1.43
+25060,Moonee Valley,2016,1.48
+25150,Moorabool,2016,1.99
+25340,Mornington Peninsula,2016,1.9
+25430,Mount Alexander,2016,1.89
+25490,Moyne,2016,2.19
+25620,Murrindindi,2016,1.97
+25710,Nillumbik,2016,1.68
+25810,Northern Grampians,2016,1.98
+25900,Port Phillip,2016,1.15
+25990,Pyrenees,2016,2.11
+26080,Queenscliffe,2016,1.43
+26170,South Gippsland,2016,2.24
+26260,Southern Grampians,2016,2.19
+26350,Stonnington,2016,1.09
+26430,Strathbogie,2016,1.94
+26490,Surf Coast,2016,1.84
+26610,Swan Hill,2016,2.35
+26670,Towong,2016,2.38
+26700,Wangaratta,2016,1.98
+26730,Warrnambool,2016,1.89
+26810,Wellington,2016,2.04
+26890,West Wimmera,2016,2.21
+26980,Whitehorse,2016,1.57
+27070,Whittlesea,2016,2
+27170,Wodonga,2016,2.09
+27260,Wyndham,2016,2.2
+27350,Yarra,2016,1.14
+27450,Yarra Ranges,2016,1.88
+27630,Yarriambiack,2016,2.07
+20110,Alpine,2017,1.91
+20260,Ararat,2017,2.1
+20570,Ballarat,2017,1.94
+20660,Banyule,2017,1.82
+20740,Bass Coast,2017,2.09
+20830,Baw Baw,2017,2.13
+20910,Bayside (Vic.),2017,1.69
+21010,Benalla,2017,1.87
+21110,Boroondara,2017,1.34
+21180,Brimbank,2017,1.91
+21270,Buloke,2017,2.22
+21370,Campaspe,2017,2.14
+21450,Cardinia,2017,2.15
+21610,Casey,2017,2.09
+21670,Central Goldfields,2017,2.06
+21750,Colac Otway,2017,2.19
+21830,Corangamite,2017,2.22
+21890,Darebin,2017,1.48
+22110,East Gippsland,2017,2.16
+22170,Frankston,2017,2
+22250,Gannawarra,2017,2.3
+22310,Glen Eira,2017,1.6
+22410,Glenelg,2017,2.12
+22490,Golden Plains,2017,2.21
+22620,Greater Bendigo,2017,1.89
+22670,Greater Dandenong,2017,1.99
+22750,Greater Geelong,2017,1.87
+22830,Greater Shepparton,2017,2.2
+22910,Hepburn,2017,1.94
+22980,Hindmarsh,2017,2.07
+23110,Hobsons Bay,2017,1.95
+23190,Horsham,2017,2.12
+23270,Hume,2017,2.08
+23350,Indigo,2017,1.89
+23430,Kingston (Vic.),2017,1.73
+23670,Knox,2017,1.7
+23810,Latrobe (Vic.),2017,1.94
+23940,Loddon,2017,2.14
+24130,Macedon Ranges,2017,2.05
+24210,Manningham,2017,1.5
+24250,Mansfield,2017,2.06
+24330,Maribyrnong,2017,1.62
+24410,Maroondah,2017,1.86
+24600,Melbourne,2017,0.86
+24650,Melton,2017,2.06
+24700,Merri-bek,2017,1.58
+24780,Mildura,2017,2.19
+24850,Mitchell,2017,2.07
+24900,Moira,2017,2.3
+24970,Monash,2017,1.41
+25060,Moonee Valley,2017,1.51
+25150,Moorabool,2017,1.95
+25340,Mornington Peninsula,2017,1.95
+25430,Mount Alexander,2017,1.83
+25490,Moyne,2017,2.23
+25620,Murrindindi,2017,1.86
+25710,Nillumbik,2017,1.75
+25810,Northern Grampians,2017,1.91
+25900,Port Phillip,2017,1.17
+25990,Pyrenees,2017,1.95
+26080,Queenscliffe,2017,1.45
+26170,South Gippsland,2017,2.13
+26260,Southern Grampians,2017,2.32
+26350,Stonnington,2017,1.11
+26430,Strathbogie,2017,1.99
+26490,Surf Coast,2017,1.87
+26610,Swan Hill,2017,2.49
+26670,Towong,2017,2.45
+26700,Wangaratta,2017,2.09
+26730,Warrnambool,2017,1.78
+26810,Wellington,2017,2.12
+26890,West Wimmera,2017,2.37
+26980,Whitehorse,2017,1.52
+27070,Whittlesea,2017,2.01
+27170,Wodonga,2017,2.05
+27260,Wyndham,2017,2.19
+27350,Yarra,2017,1.14
+27450,Yarra Ranges,2017,1.9
+27630,Yarriambiack,2017,2.23
+20110,Alpine,2018,1.79
+20260,Ararat,2018,2.02
+20570,Ballarat,2018,1.89
+20660,Banyule,2018,1.82
+20740,Bass Coast,2018,2.13
+20830,Baw Baw,2018,2.12
+20910,Bayside (Vic.),2018,1.67
+21010,Benalla,2018,2.06
+21110,Boroondara,2018,1.29
+21180,Brimbank,2018,1.9
+21270,Buloke,2018,2.13
+21370,Campaspe,2018,2.08
+21450,Cardinia,2018,2.14
+21610,Casey,2018,2.11
+21670,Central Goldfields,2018,2.02
+21750,Colac Otway,2018,2.2
+21830,Corangamite,2018,2.12
+21890,Darebin,2018,1.47
+22110,East Gippsland,2018,2.24
+22170,Frankston,2018,1.98
+22250,Gannawarra,2018,2.34
+22310,Glen Eira,2018,1.56
+22410,Glenelg,2018,2.01
+22490,Golden Plains,2018,2.19
+22620,Greater Bendigo,2018,1.92
+22670,Greater Dandenong,2018,1.98
+22750,Greater Geelong,2018,1.83
+22830,Greater Shepparton,2018,2.26
+22910,Hepburn,2018,1.91
+22980,Hindmarsh,2018,2.19
+23110,Hobsons Bay,2018,1.91
+23190,Horsham,2018,2.1
+23270,Hume,2018,2.09
+23350,Indigo,2018,1.81
+23430,Kingston (Vic.),2018,1.69
+23670,Knox,2018,1.67
+23810,Latrobe (Vic.),2018,1.93
+23940,Loddon,2018,2.1
+24130,Macedon Ranges,2018,2.08
+24210,Manningham,2018,1.44
+24250,Mansfield,2018,2.01
+24330,Maribyrnong,2018,1.58
+24410,Maroondah,2018,1.82
+24600,Melbourne,2018,0.83
+24650,Melton,2018,2.05
+24700,Merri-bek,2018,1.57
+24780,Mildura,2018,2.2
+24850,Mitchell,2018,2.08
+24900,Moira,2018,2.31
+24970,Monash,2018,1.35
+25060,Moonee Valley,2018,1.51
+25150,Moorabool,2018,1.99
+25340,Mornington Peninsula,2018,1.92
+25430,Mount Alexander,2018,1.75
+25490,Moyne,2018,2.2
+25620,Murrindindi,2018,1.95
+25710,Nillumbik,2018,1.82
+25810,Northern Grampians,2018,1.89
+25900,Port Phillip,2018,1.19
+25990,Pyrenees,2018,1.89
+26080,Queenscliffe,2018,1.86
+26170,South Gippsland,2018,2.08
+26260,Southern Grampians,2018,2.34
+26350,Stonnington,2018,1.11
+26430,Strathbogie,2018,1.98
+26490,Surf Coast,2018,1.89
+26610,Swan Hill,2018,2.45
+26670,Towong,2018,2.29
+26700,Wangaratta,2018,2.03
+26730,Warrnambool,2018,1.81
+26810,Wellington,2018,2.1
+26890,West Wimmera,2018,2.54
+26980,Whitehorse,2018,1.46
+27070,Whittlesea,2018,2
+27170,Wodonga,2018,2.02
+27260,Wyndham,2018,2.18
+27350,Yarra,2018,1.15
+27450,Yarra Ranges,2018,1.92
+27630,Yarriambiack,2018,2.26
+20110,Alpine,2019,1.71
+20260,Ararat,2019,2.02
+20570,Ballarat,2019,1.81
+20660,Banyule,2019,1.7
+20740,Bass Coast,2019,1.94
+20830,Baw Baw,2019,2
+20910,Bayside (Vic.),2019,1.6
+21010,Benalla,2019,2.03
+21110,Boroondara,2019,1.23
+21180,Brimbank,2019,1.8
+21270,Buloke,2019,2.23
+21370,Campaspe,2019,1.97
+21450,Cardinia,2019,2.05
+21610,Casey,2019,2.02
+21670,Central Goldfields,2019,1.96
+21750,Colac Otway,2019,2
+21830,Corangamite,2019,1.96
+21890,Darebin,2019,1.41
+22110,East Gippsland,2019,2.06
+22170,Frankston,2019,1.86
+22250,Gannawarra,2019,2.23
+22310,Glen Eira,2019,1.47
+22410,Glenelg,2019,1.94
+22490,Golden Plains,2019,2.09
+22620,Greater Bendigo,2019,1.84
+22670,Greater Dandenong,2019,1.86
+22750,Greater Geelong,2019,1.73
+22830,Greater Shepparton,2019,2.07
+22910,Hepburn,2019,1.83
+22980,Hindmarsh,2019,2.12
+23110,Hobsons Bay,2019,1.79
+23190,Horsham,2019,2
+23270,Hume,2019,2.01
+23350,Indigo,2019,1.89
+23430,Kingston (Vic.),2019,1.62
+23670,Knox,2019,1.57
+23810,Latrobe (Vic.),2019,1.8
+23940,Loddon,2019,2.03
+24130,Macedon Ranges,2019,1.97
+24210,Manningham,2019,1.37
+24250,Mansfield,2019,1.7
+24330,Maribyrnong,2019,1.53
+24410,Maroondah,2019,1.72
+24600,Melbourne,2019,0.74
+24650,Melton,2019,1.97
+24700,Merri-bek,2019,1.51
+24780,Mildura,2019,2.05
+24850,Mitchell,2019,1.95
+24900,Moira,2019,2.18
+24970,Monash,2019,1.26
+25060,Moonee Valley,2019,1.45
+25150,Moorabool,2019,1.88
+25340,Mornington Peninsula,2019,1.84
+25430,Mount Alexander,2019,1.67
+25490,Moyne,2019,2.04
+25620,Murrindindi,2019,1.8
+25710,Nillumbik,2019,1.73
+25810,Northern Grampians,2019,1.81
+25900,Port Phillip,2019,1.12
+25990,Pyrenees,2019,1.86
+26080,Queenscliffe,2019,1.83
+26170,South Gippsland,2019,1.93
+26260,Southern Grampians,2019,2.16
+26350,Stonnington,2019,1.06
+26430,Strathbogie,2019,1.95
+26490,Surf Coast,2019,1.82
+26610,Swan Hill,2019,2.2
+26670,Towong,2019,1.95
+26700,Wangaratta,2019,1.97
+26730,Warrnambool,2019,1.66
+26810,Wellington,2019,2.03
+26890,West Wimmera,2019,2.58
+26980,Whitehorse,2019,1.37
+27070,Whittlesea,2019,1.88
+27170,Wodonga,2019,1.99
+27260,Wyndham,2019,2.07
+27350,Yarra,2019,1.11
+27450,Yarra Ranges,2019,1.86
+27630,Yarriambiack,2019,2.07
+20110,Alpine,2020,1.51
+20260,Ararat,2020,1.86
+20570,Ballarat,2020,1.68
+20660,Banyule,2020,1.59
+20740,Bass Coast,2020,1.72
+20830,Baw Baw,2020,1.9
+20910,Bayside (Vic.),2020,1.5
+21010,Benalla,2020,1.98
+21110,Boroondara,2020,1.16
+21180,Brimbank,2020,1.69
+21270,Buloke,2020,2.36
+21370,Campaspe,2020,1.91
+21450,Cardinia,2020,1.94
+21610,Casey,2020,1.91
+21670,Central Goldfields,2020,1.8
+21750,Colac Otway,2020,1.9
+21830,Corangamite,2020,1.86
+21890,Darebin,2020,1.32
+22110,East Gippsland,2020,1.97
+22170,Frankston,2020,1.74
+22250,Gannawarra,2020,2.2
+22310,Glen Eira,2020,1.37
+22410,Glenelg,2020,1.96
+22490,Golden Plains,2020,2.05
+22620,Greater Bendigo,2020,1.75
+22670,Greater Dandenong,2020,1.72
+22750,Greater Geelong,2020,1.66
+22830,Greater Shepparton,2020,1.97
+22910,Hepburn,2020,1.78
+22980,Hindmarsh,2020,2.06
+23110,Hobsons Bay,2020,1.71
+23190,Horsham,2020,1.9
+23270,Hume,2020,1.89
+23350,Indigo,2020,1.94
+23430,Kingston (Vic.),2020,1.56
+23670,Knox,2020,1.47
+23810,Latrobe (Vic.),2020,1.74
+23940,Loddon,2020,1.98
+24130,Macedon Ranges,2020,1.88
+24210,Manningham,2020,1.28
+24250,Mansfield,2020,1.6
+24330,Maribyrnong,2020,1.41
+24410,Maroondah,2020,1.64
+24600,Melbourne,2020,0.69
+24650,Melton,2020,1.89
+24700,Merri-bek,2020,1.4
+24780,Mildura,2020,1.89
+24850,Mitchell,2020,1.91
+24900,Moira,2020,2.04
+24970,Monash,2020,1.16
+25060,Moonee Valley,2020,1.36
+25150,Moorabool,2020,1.77
+25340,Mornington Peninsula,2020,1.73
+25430,Mount Alexander,2020,1.61
+25490,Moyne,2020,2.11
+25620,Murrindindi,2020,1.7
+25710,Nillumbik,2020,1.65
+25810,Northern Grampians,2020,1.79
+25900,Port Phillip,2020,1.07
+25990,Pyrenees,2020,1.94
+26080,Queenscliffe,2020,1.73
+26170,South Gippsland,2020,1.83
+26260,Southern Grampians,2020,2.03
+26350,Stonnington,2020,0.97
+26430,Strathbogie,2020,1.83
+26490,Surf Coast,2020,1.75
+26610,Swan Hill,2020,2.08
+26670,Towong,2020,1.72
+26700,Wangaratta,2020,1.84
+26730,Warrnambool,2020,1.67
+26810,Wellington,2020,1.91
+26890,West Wimmera,2020,2.75
+26980,Whitehorse,2020,1.26
+27070,Whittlesea,2020,1.75
+27170,Wodonga,2020,1.9
+27260,Wyndham,2020,1.96
+27350,Yarra,2020,1.04
+27450,Yarra Ranges,2020,1.79
+27630,Yarriambiack,2020,2.07
+20110,Alpine,2021,1.59
+20260,Ararat,2021,1.84
+20570,Ballarat,2021,1.7
+20660,Banyule,2021,1.55
+20740,Bass Coast,2021,1.69
+20830,Baw Baw,2021,1.92
+20910,Bayside (Vic.),2021,1.54
+21010,Benalla,2021,1.86
+21110,Boroondara,2021,1.15
+21180,Brimbank,2021,1.59
+21270,Buloke,2021,2.44
+21370,Campaspe,2021,1.93
+21450,Cardinia,2021,1.9
+21610,Casey,2021,1.87
+21670,Central Goldfields,2021,1.76
+21750,Colac Otway,2021,1.73
+21830,Corangamite,2021,1.86
+21890,Darebin,2021,1.27
+22110,East Gippsland,2021,1.84
+22170,Frankston,2021,1.72
+22250,Gannawarra,2021,2.05
+22310,Glen Eira,2021,1.38
+22410,Glenelg,2021,1.92
+22490,Golden Plains,2021,2.11
+22620,Greater Bendigo,2021,1.75
+22670,Greater Dandenong,2021,1.63
+22750,Greater Geelong,2021,1.65
+22830,Greater Shepparton,2021,1.87
+22910,Hepburn,2021,1.77
+22980,Hindmarsh,2021,1.95
+23110,Hobsons Bay,2021,1.69
+23190,Horsham,2021,1.83
+23270,Hume,2021,1.85
+23350,Indigo,2021,1.95
+23430,Kingston (Vic.),2021,1.55
+23670,Knox,2021,1.46
+23810,Latrobe (Vic.),2021,1.75
+23940,Loddon,2021,1.89
+24130,Macedon Ranges,2021,1.84
+24210,Manningham,2021,1.27
+24250,Mansfield,2021,1.41
+24330,Maribyrnong,2021,1.36
+24410,Maroondah,2021,1.59
+24600,Melbourne,2021,0.67
+24650,Melton,2021,1.89
+24700,Merri-bek,2021,1.35
+24780,Mildura,2021,1.82
+24850,Mitchell,2021,1.93
+24900,Moira,2021,1.94
+24970,Monash,2021,1.14
+25060,Moonee Valley,2021,1.35
+25150,Moorabool,2021,1.78
+25340,Mornington Peninsula,2021,1.75
+25430,Mount Alexander,2021,1.7
+25490,Moyne,2021,2.08
+25620,Murrindindi,2021,1.75
+25710,Nillumbik,2021,1.68
+25810,Northern Grampians,2021,1.81
+25900,Port Phillip,2021,1.02
+25990,Pyrenees,2021,1.9
+26080,Queenscliffe,2021,1.94
+26170,South Gippsland,2021,1.81
+26260,Southern Grampians,2021,2.04
+26350,Stonnington,2021,0.97
+26430,Strathbogie,2021,1.98
+26490,Surf Coast,2021,1.79
+26610,Swan Hill,2021,1.99
+26670,Towong,2021,1.88
+26700,Wangaratta,2021,1.85
+26730,Warrnambool,2021,1.61
+26810,Wellington,2021,1.89
+26890,West Wimmera,2021,2.56
+26980,Whitehorse,2021,1.19
+27070,Whittlesea,2021,1.7
+27170,Wodonga,2021,1.88
+27260,Wyndham,2021,1.87
+27350,Yarra,2021,0.99
+27450,Yarra Ranges,2021,1.79
+27630,Yarriambiack,2021,2.02
+20110,Alpine,2022,1.67
+20260,Ararat,2022,1.8
+20570,Ballarat,2022,1.67
+20660,Banyule,2022,1.54
+20740,Bass Coast,2022,1.73
+20830,Baw Baw,2022,1.92
+20910,Bayside (Vic.),2022,1.53
+21010,Benalla,2022,1.85
+21110,Boroondara,2022,1.1
+21180,Brimbank,2022,1.54
+21270,Buloke,2022,2.57
+21370,Campaspe,2022,1.99
+21450,Cardinia,2022,1.9
+21610,Casey,2022,1.86
+21670,Central Goldfields,2022,1.71
+21750,Colac Otway,2022,1.81
+21830,Corangamite,2022,1.94
+21890,Darebin,2022,1.22
+22110,East Gippsland,2022,1.86
+22170,Frankston,2022,1.76
+22250,Gannawarra,2022,2.17
+22310,Glen Eira,2022,1.33
+22410,Glenelg,2022,1.88
+22490,Golden Plains,2022,2.11
+22620,Greater Bendigo,2022,1.74
+22670,Greater Dandenong,2022,1.54
+22750,Greater Geelong,2022,1.7
+22830,Greater Shepparton,2022,1.87
+22910,Hepburn,2022,1.72
+22980,Hindmarsh,2022,2.14
+23110,Hobsons Bay,2022,1.66
+23190,Horsham,2022,1.84
+23270,Hume,2022,1.85
+23350,Indigo,2022,2.01
+23430,Kingston (Vic.),2022,1.52
+23670,Knox,2022,1.44
+23810,Latrobe (Vic.),2022,1.83
+23940,Loddon,2022,1.91
+24130,Macedon Ranges,2022,1.93
+24210,Manningham,2022,1.24
+24250,Mansfield,2022,1.49
+24330,Maribyrnong,2022,1.28
+24410,Maroondah,2022,1.56
+24600,Melbourne,2022,0.65
+24650,Melton,2022,1.92
+24700,Merri-bek,2022,1.29
+24780,Mildura,2022,1.81
+24850,Mitchell,2022,1.98
+24900,Moira,2022,1.99
+24970,Monash,2022,1.14
+25060,Moonee Valley,2022,1.3
+25150,Moorabool,2022,1.87
+25340,Mornington Peninsula,2022,1.77
+25430,Mount Alexander,2022,1.74
+25490,Moyne,2022,2.15
+25620,Murrindindi,2022,1.78
+25710,Nillumbik,2022,1.74
+25810,Northern Grampians,2022,1.83
+25900,Port Phillip,2022,0.99
+25990,Pyrenees,2022,1.8
+26080,Queenscliffe,2022,2.15
+26170,South Gippsland,2022,1.93
+26260,Southern Grampians,2022,2.04
+26350,Stonnington,2022,0.94
+26430,Strathbogie,2022,1.87
+26490,Surf Coast,2022,1.8
+26610,Swan Hill,2022,1.98
+26670,Towong,2022,2.02
+26700,Wangaratta,2022,1.84
+26730,Warrnambool,2022,1.63
+26810,Wellington,2022,1.9
+26890,West Wimmera,2022,2.61
+26980,Whitehorse,2022,1.14
+27070,Whittlesea,2022,1.7
+27170,Wodonga,2022,1.86
+27260,Wyndham,2022,1.87
+27350,Yarra,2022,0.94
+27450,Yarra Ranges,2022,1.8
+27630,Yarriambiack,2022,2.44
+20110,Alpine,2023,1.68
+20260,Ararat,2023,1.82
+20570,Ballarat,2023,1.66
+20660,Banyule,2023,1.52
+20740,Bass Coast,2023,1.81
+20830,Baw Baw,2023,1.94
+20910,Bayside (Vic.),2023,1.52
+21010,Benalla,2023,1.81
+21110,Boroondara,2023,1.08
+21180,Brimbank,2023,1.51
+21270,Buloke,2023,2.41
+21370,Campaspe,2023,2.02
+21450,Cardinia,2023,1.89
+21610,Casey,2023,1.83
+21670,Central Goldfields,2023,1.79
+21750,Colac Otway,2023,1.83
+21830,Corangamite,2023,2.11
+21890,Darebin,2023,1.15
+22110,East Gippsland,2023,1.89
+22170,Frankston,2023,1.76
+22250,Gannawarra,2023,2.33
+22310,Glen Eira,2023,1.27
+22410,Glenelg,2023,1.89
+22490,Golden Plains,2023,2.08
+22620,Greater Bendigo,2023,1.75
+22670,Greater Dandenong,2023,1.5
+22750,Greater Geelong,2023,1.7
+22830,Greater Shepparton,2023,1.88
+22910,Hepburn,2023,1.84
+22980,Hindmarsh,2023,2.04
+23110,Hobsons Bay,2023,1.6
+23190,Horsham,2023,1.86
+23270,Hume,2023,1.87
+23350,Indigo,2023,2.11
+23430,Kingston (Vic.),2023,1.48
+23670,Knox,2023,1.44
+23810,Latrobe (Vic.),2023,1.83
+23940,Loddon,2023,2.07
+24130,Macedon Ranges,2023,1.97
+24210,Manningham,2023,1.22
+24250,Mansfield,2023,1.48
+24330,Maribyrnong,2023,1.2
+24410,Maroondah,2023,1.52
+24600,Melbourne,2023,0.6
+24650,Melton,2023,1.98
+24700,Merri-bek,2023,1.23
+24780,Mildura,2023,1.85
+24850,Mitchell,2023,1.99
+24900,Moira,2023,2
+24970,Monash,2023,1.11
+25060,Moonee Valley,2023,1.26
+25150,Moorabool,2023,1.91
+25340,Mornington Peninsula,2023,1.75
+25430,Mount Alexander,2023,1.84
+25490,Moyne,2023,2.18
+25620,Murrindindi,2023,1.86
+25710,Nillumbik,2023,1.77
+25810,Northern Grampians,2023,1.84
+25900,Port Phillip,2023,0.92
+25990,Pyrenees,2023,1.8
+26080,Queenscliffe,2023,2.15
+26170,South Gippsland,2023,2.01
+26260,Southern Grampians,2023,2.09
+26350,Stonnington,2023,0.92
+26430,Strathbogie,2023,1.97
+26490,Surf Coast,2023,1.87
+26610,Swan Hill,2023,1.98
+26670,Towong,2023,2.26
+26700,Wangaratta,2023,1.83
+26730,Warrnambool,2023,1.63
+26810,Wellington,2023,1.98
+26890,West Wimmera,2023,2.48
+26980,Whitehorse,2023,1.09
+27070,Whittlesea,2023,1.68
+27170,Wodonga,2023,1.87
+27260,Wyndham,2023,1.84
+27350,Yarra,2023,0.89
+27450,Yarra Ranges,2023,1.82
+27630,Yarriambiack,2023,2.4
+20110,Alpine,2024,1.67
+20260,Ararat,2024,1.85
+20570,Ballarat,2024,1.68
+20660,Banyule,2024,1.53
+20740,Bass Coast,2024,1.85
+20830,Baw Baw,2024,1.99
+20910,Bayside (Vic.),2024,1.46
+21010,Benalla,2024,1.91
+21110,Boroondara,2024,1.04
+21180,Brimbank,2024,1.55
+21270,Buloke,2024,2.42
+21370,Campaspe,2024,2.09
+21450,Cardinia,2024,1.93
+21610,Casey,2024,1.86
+21670,Central Goldfields,2024,1.95
+21750,Colac Otway,2024,1.9
+21830,Corangamite,2024,2.18
+21890,Darebin,2024,1.13
+22110,East Gippsland,2024,1.96
+22170,Frankston,2024,1.8
+22250,Gannawarra,2024,2.65
+22310,Glen Eira,2024,1.19
+22410,Glenelg,2024,2.03
+22490,Golden Plains,2024,2.04
+22620,Greater Bendigo,2024,1.75
+22670,Greater Dandenong,2024,1.51
+22750,Greater Geelong,2024,1.75
+22830,Greater Shepparton,2024,2
+22910,Hepburn,2024,1.89
+22980,Hindmarsh,2024,2.11
+23110,Hobsons Bay,2024,1.6
+23190,Horsham,2024,1.92
+23270,Hume,2024,1.92
+23350,Indigo,2024,2.34
+23430,Kingston (Vic.),2024,1.46
+23670,Knox,2024,1.42
+23810,Latrobe (Vic.),2024,1.89
+23940,Loddon,2024,1.97
+24130,Macedon Ranges,2024,2.04
+24210,Manningham,2024,1.2
+24250,Mansfield,2024,1.54
+24330,Maribyrnong,2024,1.16
+24410,Maroondah,2024,1.51
+24600,Melbourne,2024,0.54
+24650,Melton,2024,2.1
+24700,Merri-bek,2024,1.19
+24780,Mildura,2024,1.91
+24850,Mitchell,2024,2.07
+24900,Moira,2024,2.17
+24970,Monash,2024,1.09
+25060,Moonee Valley,2024,1.21
+25150,Moorabool,2024,1.98
+25340,Mornington Peninsula,2024,1.73
+25430,Mount Alexander,2024,1.79
+25490,Moyne,2024,2.25
+25620,Murrindindi,2024,1.88
+25710,Nillumbik,2024,1.78
+25810,Northern Grampians,2024,1.94
+25900,Port Phillip,2024,0.87
+25990,Pyrenees,2024,1.83
+26080,Queenscliffe,2024,2.09
+26170,South Gippsland,2024,2.1
+26260,Southern Grampians,2024,2.11
+26350,Stonnington,2024,0.83
+26430,Strathbogie,2024,1.87
+26490,Surf Coast,2024,1.75
+26610,Swan Hill,2024,2.12
+26670,Towong,2024,2.34
+26700,Wangaratta,2024,1.8
+26730,Warrnambool,2024,1.73
+26810,Wellington,2024,2.06
+26890,West Wimmera,2024,2.68
+26980,Whitehorse,2024,1.05
+27070,Whittlesea,2024,1.7
+27170,Wodonga,2024,1.91
+27260,Wyndham,2024,1.92
+27350,Yarra,2024,0.84
+27450,Yarra Ranges,2024,1.81
+27630,Yarriambiack,2024,2.69

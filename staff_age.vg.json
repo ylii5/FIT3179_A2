@@ -1,0 +1,96 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Workforce by Age Group and Service Type (with Across-Service Average)",
+  "background": "#b7c9e2",
+  "width": "container",
+  "height": 420,
+
+  "data": {
+    "url": "data/staff_age.csv",
+    "format": { "type": "csv", "parse": { "Percentage": "number" } }
+  },
+
+  "transform": [
+    { "filter": "datum.Percentage <= 100" },
+    { "filter": "datum.ServiceType != null" }
+  ],
+
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "AgeGroup",
+          "type": "nominal",
+          "title": "Age Group",
+          "sort": ["15-19","20-24","25-29","30-34","35-39","40-44","45-49","50-54","55 and over"],
+          "axis": {"labelAngle": -20}
+        },
+        "xOffset": { "field": "ServiceType" },
+        "y": {
+          "title": "Workforce (%)",
+          "field": "Percentage",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "ServiceType",
+          "type": "nominal",
+          "title": "Service Type",
+          "legend": { "orient": "right" },
+          "scale": {
+            "domain": ["CBDC", "FDC", "IHC", "OSHC", "VAC", "PRE"],
+            "range": ["#E69F00", "#56B4E9", "#009E73", "#0072B2", "#CC79A7", "#D55E00"]
+          }
+        },
+        "tooltip": [
+          { "field": "AgeGroup", "title": "Age Group" },
+          { "field": "ServiceType", "title": "Service Type" },
+          { "field": "Percentage", "title": "Percentage", "format": ".1f" }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [{ "op": "mean", "field": "Percentage", "as": "AvgAcrossServices" }],
+          "groupby": ["AgeGroup"]
+        }
+      ],
+      "mark": { "type": "line", "strokeWidth": 2, "strokeDash": [4, 4], "color": "black" },
+      "encoding": {
+        "x": { "field": "AgeGroup", "type": "nominal",
+          "sort": ["15-19","20-24","25-29","30-34","35-39","40-44","45-49","50-54","55 and over"]
+        },
+        "y": { "field": "AvgAcrossServices", "type": "quantitative", "title": "Workforce (%)" },
+        "tooltip": [
+          { "field": "AgeGroup", "title": "Age" },
+          { "field": "AvgAcrossServices", "title": "Avg across services", "format": ".1f" }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [{ "op": "mean", "field": "Percentage", "as": "AvgAcrossServices" }],
+          "groupby": ["AgeGroup"]
+        }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 60, "color": "black" },
+      "encoding": {
+        "x": { "field": "AgeGroup", "type": "nominal",
+          "sort": ["15-19","20-24","25-29","30-34","35-39","40-44","45-49","50-54","55 and over"]
+        },
+        "y": { "field": "AvgAcrossServices", "type": "quantitative" },
+        "tooltip": [
+          { "field": "AgeGroup", "title": "Age" },
+          { "field": "AvgAcrossServices", "title": "Avg across services", "format": ".1f" }
+        ]
+      }
+    }
+  ],
+
+  "config": {
+    "view": { "stroke": null },
+    "axis": { "labelFontSize": 11, "titleFontSize": 12 }
+  }
+}

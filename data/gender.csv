@@ -1,0 +1,19 @@
+﻿gender,service type,percentage
+Male,CBDC,3.90
+Female,CBDC,95.90
+Other / Non-binary,CBDC,0.20
+Male,FDC,3.50
+Female,FDC,96.40
+Other / Non-binary,FDC,0.10
+Male,IHC,2.20
+Female,IHC,97.70
+Other / Non-binary,IHC,0.10
+Male,OSHC,18.60
+Female,OSHC,81.20
+Other / Non-binary,OSHC,0.20
+Male,VAC,19.40
+Female,VAC,80.50
+Other / Non-binary,VAC,0.20
+Male,PRE,5.80
+Female,PRE,94.20
+Other / Non-binary,PRE,0.10

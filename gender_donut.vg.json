@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "Workforce Gender Split", "anchor": "middle"},
+  "background": "#b7c9e2",
+  "width": 360,
+  "height": 360,
+
+  "data": {
+    "url": "data/gender.csv",
+    "format": {
+      "type": "csv",
+      "parse": { "percentage": "number" }  
+    }
+  },
+
+  "params": [
+    {
+      "name": "whichService",
+      "value": "CBDC",
+      "bind": {
+        "input": "select",
+        "name": "Service: ",
+        "options": ["CBDC","FDC","IHC","OSHC","VAC","PRE"],
+        "labels": [
+          "Centre-based (CBDC)","Family Day Care (FDC)","In Home Care (IHC)",
+          "Outside School Hours (OSHC)","Vacation Care (VAC)","Preschool (PRE)"
+        ]
+      }
+    }
+  ],
+
+  "transform": [
+    { "calculate": "lower(trim(datum['service type']))", "as": "svc_norm" },
+    { "calculate": "lower(trim(whichService))",          "as": "which_norm" },
+    { "filter": "datum.svc_norm == datum.which_norm" },
+
+    { "calculate": "format(datum.percentage, '.1f') + '%'", "as": "pct_label" }
+  ],
+
+  "layer": [
+    {
+      "mark": { "type": "arc", "innerRadius": 100, "stroke": "#fff" },
+      "encoding": {
+        "theta": { "field": "percentage", "type": "quantitative" },
+        "color": {
+          "field": "gender",
+          "type": "nominal",
+          "title": "Gender",
+          "scale": {
+            "domain": ["Female", "Male", "Other / Non-binary"],
+            "range": ["#E69F00", "#56B4E9", "#009E73"]
+          }
+        },
+        "tooltip": [
+          { "field": "gender", "title": "Gender" },
+          { "field": "percentage", "title": "Share (%)", "format": ".1f" }
+        ]
+      }
+    },
+    {
+      "mark": { "type": "text", "radius": 135, "fontSize": 12 },
+      "encoding": {
+        "theta": { "field": "percentage", "type": "quantitative" },
+        "text":  { "field": "pct_label", "type": "nominal" },
+        "color": { "value": "#000" }
+      }
+    }
+  ],
+
+  "view": { "stroke": null },
+
+  "config": {
+    "legend": { "titleFontSize": 12, "labelFontSize": 11 },
+    "arc": { "cornerRadius": 4 },
+    "title": { "fontSize": 16, "color": "#2c3e50" }
+  }
+}

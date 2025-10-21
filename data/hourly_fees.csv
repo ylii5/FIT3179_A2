@@ -1,0 +1,33 @@
+ServiceType,State,HourlyFee
+Centre-based Day Care,NSW,14.2
+Family Day Care,NSW,13.75
+Outside School Hours Care,NSW,9.4
+Total,NSW,13.5
+Centre-based Day Care,VIC,14.15
+Family Day Care,VIC,13.2
+Outside School Hours Care,VIC,10.4
+Total,VIC,13.7
+Centre-based Day Care,QLD,13.65
+Family Day Care,QLD,13.45
+Outside School Hours Care,QLD,8.75
+Total,QLD,12.85
+Centre-based Day Care,SA,13.6
+Family Day Care,SA,14.05
+Outside School Hours Care,SA,8.5
+Total,SA,12.65
+Centre-based Day Care,WA,14.3
+Family Day Care,WA,13.15
+Outside School Hours Care,WA,12.4
+Total,WA,13.95
+Centre-based Day Care,TAS,12.75
+Family Day Care,TAS,14.4
+Outside School Hours Care,TAS,11.6
+Total,TAS,12.7
+Centre-based Day Care,NT,12.6
+Family Day Care,NT,14.15
+Outside School Hours Care,NT,9.1
+Total,NT,11.95
+Centre-based Day Care,ACT,15.7
+Family Day Care,ACT,13.95
+Outside School Hours Care,ACT,12.9
+Total,ACT,15.2

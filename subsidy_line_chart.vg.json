@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Subsidy Over Time by Service Type",
+  "background": "#b7c9e2",
+  "width": "container",
+  "height": 380,
+
+  "data": { "url": "data/subsidy_line_long.csv" },
+
+  "params": [
+    {
+      "name": "whichSubsidy",
+      "value": "CCS",
+      "bind": {
+        "input": "select",
+        "options": ["CCS", "ACCS"],
+        "labels": ["Child Care Subsidy (CCS)", "Additional CCS (ACCS)"],
+        "name": "Show: "
+      }
+    }
+  ],
+
+  "transform": [
+    { "filter": "datum.SubsidyTypeShort == whichSubsidy" },
+    { "calculate": "datum.Amount / 1000", "as": "Amount_Bn" }  
+  ],
+
+  "mark": { "type": "line", "point": true, "strokeWidth": 2 },
+
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Year",
+      "sort": "ascending",
+      "axis": { "labelAngle": 0 }
+    },
+    "y": {
+      "field": "Amount_Bn",
+      "type": "quantitative",
+      "title": "Amount (billions AUD)",
+      "axis": { "labelExpr": "datum.value + 'M'" }
+    },
+    "color": { 
+      "field": "service type", 
+      "type": "nominal", 
+      "title": "Service Type",
+      "scale": {
+        "domain": ["Centre-based Day Care", "Family Day Care", "In Home Care", "Outside School Hours Care"],
+        "range": ["#E69F00", "#56B4E9", "#009E73", "#0072B2"]
+      }
+    },
+    "tooltip": [
+      { "field": "service type", "title": "Service" },
+      { "field": "year", "title": "Year" },
+      { "field": "SubsidyTypeShort", "title": "Type" },
+      { "field": "Amount_Bn", "title": "Amount (bn)", "format": ".3f" }
+    ]
+  },
+
+  "config": {
+    "view": { "stroke": null },
+    "axis": { "labelFontSize": 11, "titleFontSize": 12 }
+  }
+}

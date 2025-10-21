@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+  <title>Childcare in Australia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background-image: url('data/kinder.jpg'); background-repeat: repeat; background-attachment: fixed; background-size: cover; }
+    .dashboard-section { max-width: 1000px; margin: 40px auto; background: #b7c9e2; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); padding: 32px; overflow: hidden; }
+    h1 { text-align: center; margin-top: 40px; font-size: 2.5em; color: #405a75; }
+    h2 { margin-top: 8px; color: #34495e; }
+    .section-blurb { margin: 4px 0 16px; color: #2c3e50; font-weight: 600; }
+    .chart-note { margin-top: -16px; color: #2c3e50; }
+    .chart-container { margin: 24px 0; max-width: 100%; overflow: visible; min-height: 360px; }
+    .dashboard-section > .flex-charts { display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start; }
+    .flex-charts > div { flex: 1 1 400px; min-width: 320px; box-sizing: border-box; }
+    p { font-size: 1.05em; color: #444; line-height: 1.7; }
+    .spacer { height: 48px; }
+    .flex-charts .wide { flex: 1 1 100%; min-width: 100%; }
+    .chart-container { width: 100%; max-width: 100%; display:flex; justify-content:center; }
+    .chart-container .vega-embed { width:100%; max-width: 1000px; margin:0 auto; }
+  </style>
+</head>
+<body>
+  <h1>Childcare in Australia</h1>
+
+  <!-- Overview -->
+  <div class="dashboard-section">
+    <h2>What this dashboard covers</h2>
+    <p class="section-blurb">We connect population drivers, affordability, policy support and workforce capacity to explain childcare access across Australia.</p>
+    <p>
+      Scroll to explore four lenses: (1) demand vs capacity, (2) affordability by state/service, (3) how subsidies scale and are allocated, and (4) who delivers care (headcount and age mix).
+    </p>
+  </div>
+
+  <!-- Section 1: Demand vs capacity -->
+  <div class="dashboard-section">
+    <h2>Population pressure and capacity: where demand meets services</h2>
+    <p class="section-blurb">We first compare fertility patterns with the distribution of services to identify potential pressure points.</p>
+
+    <div class="flex-charts">
+      <div>
+        <h3>Fertility hotspots and lows in Victoria</h3>
+        <div id="birthrate-map" class="chart-container"></div>
+        <p class="chart-note">Outer suburban and regional LGAs sustain higher total fertility rates than inner-city areas, signalling greater future demand in growth corridors. Regions with missing data have been excluded from the analysis.</p>
+      </div>
+    </div>
+    <div>
+        <h3>Services vs children across regions</h3>
+        <p>Each dot is a region; quadrants reflect medians. Brush to highlight; filter by state with the dropdown.</p>
+        <div id="svc-vs-child" class="chart-container"></div>
+        <p class="chart-note">Many regions cluster near median capacity, but outliers reveal local mismatches-areas with many children per service may face access pressure.</p>
+      </div>
+  </div>
+
+  <!-- Section 2: Affordability -->
+  <div class="dashboard-section">
+    <h2>Affordability across states and services</h2>
+    <p class="section-blurb">We then look at what families pay: average weekly fees by state and hourly fees by service type.</p>
+
+    <div class="flex-charts">
+      <div>
+        <h3>Average weekly fees by state</h3>
+        <div id="map-chart" class="chart-container"></div>
+        <p class="chart-note">Fees vary materially by state, likely reflecting local costs, demand intensity and market structure.</p>
+      </div>
+    </div>
+    <div>
+        <h3>Hourly fees by service type and state</h3>
+        <div id="heat-map" class="chart-container"></div>
+        <p class="chart-note">Centre-based day care tends to be pricier than in-home or family day care, though relative gaps differ by state.</p>
+      </div>
+  </div>
+
+  <!-- Section 3: Public support -->
+  <div class="dashboard-section">
+    <h2>Public support: subsidy scale and allocation</h2>
+    <p class="section-blurb">Next, we examine how government funding changes over time and how it's distributed across services.</p>
+
+    <div class="flex-charts">
+      <div>
+        <h3>Subsidy over time</h3>
+        <div id="line-chart" class="chart-container"></div>
+        <p class="chart-note">Total subsidy rises and falls with policy settings and participation; recent peaks coincide with policy expansions.</p>
+      </div>
+
+      <div>
+        <h3>How subsidies are split across services</h3>
+        <div id="subsidy-bar-chart" class="chart-container"></div>
+        <p class="chart-note">Centre-based services receive the largest share, consistent with their scale and enrolment patterns.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: Workforce -->
+  <div class="dashboard-section">
+    <h2>Workforce profile: headcount and age mix</h2>
+    <p class="section-blurb">Finally, we look at who delivers care-where staff are employed and how the age structure differs by service.</p>
+
+    <div class="flex-charts">
+      <div>
+        <h3>Staff by service type and state</h3>
+        <div id="stacked-bar" class="chart-container"></div>
+        <p class="chart-note">Centre-based day care dominates staffing with university level or higher qualifications in all states; smaller services like in-home care have correspondingly leaner workforces that have university level or higher qualifications.</p>
+      </div>
+      <div>
+        <h3>Gender composition by service</h3>
+        <div id="donut" class="chart-container"></div>
+        <p class="chart-note">Use the dropdown to compare the gender split across service types or view the overall picture.</p>
+    </div>
+    </div>
+    <div>
+        <h3>Staff age distribution by service</h3>
+        <div id="staff-age" class="chart-container"></div>
+        <p class="chart-note">Age profiles peak earlier in centre-based roles, while some services retain relatively older cohorts-implications possibly for retention and training.</p>
+      </div>
+  </div>
+
+  <div class="dashboard-section">
+    <h2>Conclusions</h2>
+    <p class="section-blurb">Key takeaways from the data</p>
+    <p>
+      1. Demand and capacity vary regionally, with some areas facing higher pressure due to fertility patterns and service availability.<br>
+      2. Affordability differs significantly by state and service type, impacting access for families.<br>
+      3. Government subsidies have increased over time, with centre-based services receiving the majority of funding.<br>
+      4. The workforce is predominantly female and highly qualified, but faces challenges related to retention and professional development.
+    </p>
+  </div>
+
+  <div class="dashboard-section">
+    <h4>Acknowledgements</h4>
+    <p>Author: Yating Li</p>
+    <p>
+      Student ID: 33899967
+    </p>
+    <p>
+      Resources: https://data.gov.au/ LGA grid and shapefiles for maps, https://www.abs.gov.au/statistics for population and birthrates, https://www.education.gov.au/early-childhood/about/data-and-reports for childcare data ie subsidies
+    </p>
+  </div>
+
+  <script>
+    // Map chart
+    fetch('./fee_chloropleth_map.vg.json').then(r => r.json()).then(spec => vegaEmbed('#map-chart', spec, {actions: false}));
+
+    // Subsidy breakdown bar chart
+    fetch('./subsidy_bar.vg.json').then(r => r.json()).then(spec => { spec.width = 400; spec.height = 300; vegaEmbed('#subsidy-bar-chart', spec, {actions: false}); });
+
+    // Fertility (Victoria)
+    fetch('./birthrate.vg.json').then(r => r.json()).then(spec => vegaEmbed('#birthrate-map', spec, { actions: false }));
+
+    // Services vs Children scatter
+    fetch('./child.vg.json').then(r => r.json()).then(spec => vegaEmbed('#svc-vs-child', spec, { actions: false })).catch(err => console.error(err));
+
+    // Fee heatmap
+    fetch('./heatmap.vg.json').then(r => r.json()).then(spec => vegaEmbed('#heat-map', spec, { actions: false, renderer: 'canvas' }));
+
+    // Subsidy line
+    fetch('./subsidy_line_chart.vg.json').then(r => r.json()).then(spec => vegaEmbed('#line-chart', spec, {actions: false}));
+
+    // Workforce stacked bar
+    fetch('./stacked_bar.vg.json').then(r => r.json()).then(spec => vegaEmbed('#stacked-bar', spec, {actions: false}));
+
+    // Staff age distribution
+    fetch('./staff_age.vg.json').then(r => r.json()).then(spec => vegaEmbed('#staff-age', spec, {actions: false}));
+
+    // Gender donut chart
+    fetch('./gender_donut.vg.json').then(r => r.json()).then(spec => {
+            vegaEmbed('#donut', spec, { actions: false });
+        });
+  </script>
+</body>
+</html>

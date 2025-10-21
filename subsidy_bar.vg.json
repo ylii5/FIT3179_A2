@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Totals by service type",
+  "width": 600,
+  "height": 360,
+  "background": "#b7c9e2",
+  "config": { "view": { "stroke": null } },
+  "data": { "url": "data/subsidy.csv" },
+  
+    "transform": [
+      {"calculate": "datum.subsidy / 1000000", "as": "subsidy_billions"}
+    ],
+
+  "mark": { "type": "bar", "cornerRadiusTopLeft": 3, "cornerRadiusTopRight": 3 },
+  "encoding": {
+    "x": {"field": "Service type", "type": "nominal", "title": "Service type", "sort": "-y", "axis": {"labelAngle": -20}},
+      "y": {"field": "subsidy_billions", "type": "quantitative", "title": "Total subsidy ($ billions)"},
+    "color": {
+      "field": "Service type", 
+      "type": "nominal", 
+      "legend": null,
+      "scale": {
+          "domain": ["Centre-based Day Care", "Family Day Care", "In Home Care", "Outside School Hours Care"],
+          "range": ["#E69F00", "#56B4E9", "#009E73", "#0072B2"]
+      }
+    },
+    "tooltip": [
+      {"field": "Service type", "title": "Service type:"},
+      {"field": "subsidy_billions", "title": "Total subsidy ($ billion):", "format": ".2f"}
+    ]
+  }
+}

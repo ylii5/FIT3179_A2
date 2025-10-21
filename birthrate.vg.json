@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Victoria: Total Fertility Rate (2013-2024)",
+  "width": "container",
+  "height": 520,
+  "background": "#b7c9e2",
+  
+  
+  "params": [
+    {
+      "name": "Year_selection",
+      "value": 2018,
+      "bind": {"input": "range", "min": 2013, "max": 2024, "step": 1, "name": "Year: "}
+    },
+    {
+      "name": "zoom_level",
+      "value": 4900,
+      "bind": {"input": "range", "min": 3700, "max": 40000, "step": 100, "name": "Zoom: "}
+    },
+    {
+      "name": "center_lon",
+      "value": 145,
+      "bind": {"input": "range", "min": 140, "max": 150, "step": 0.01, "name": "Left: "}
+    },
+    {
+      "name": "center_lat",
+      "value": -36.9,
+      "bind": {"input": "range", "min": -39.5, "max": -33.5, "step": 0.01, "name": "Right: "}
+    }
+  ],
+
+  "projection": { 
+    "type": "mercator",
+    "center": {"expr": "[center_lon, center_lat]"},
+    "scale": {"expr": "zoom_level"}
+  },
+
+  "data": { "url": "data/birthrate_long.csv" },
+
+  "transform": [
+    { "calculate": "toNumber(datum.year)", "as": "year_num" },
+    { "filter": "datum.year_num == Year_selection" },
+
+    {
+      "lookup": "lga_name",
+      "from": {
+        "data": { "url": "data/vic_lga.json", "format": { "type": "topojson", "feature": "vic_lga" } },
+        "key": "properties.ABB_NAME"
+      },
+      "as": "geo"
+    }
+  ],
+
+  "mark": { "type": "geoshape", "stroke": "#fff", "strokeWidth": 0.5 },
+
+  "encoding": {
+    "shape": { "field": "geo", "type": "geojson" },
+    "color": {
+      "field": "birth_rate",
+      "type": "quantitative",
+      "title": "Total fertility rate",
+      "scale": { "scheme": "tealblues"}
+    },
+    "tooltip": [
+      { "field": "lga_name", "type": "nominal", "title": "Cities" },
+      { "field": "birth_rate", "type": "quantitative", "format": ".2f", "title": "Fertility Rate" },
+      { "field": "year_num", "type": "quantitative", "title": "Year" } 
+    ]
+  },
+
+  "autosize": { "type": "fit", "contains": "padding" },
+  "config": { "view": { "stroke": null } }
+}

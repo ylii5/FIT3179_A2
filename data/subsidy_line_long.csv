@@ -1,0 +1,33 @@
+service type,year,SubsidyType,Amount,SubsidyTypeShort
+Centre-based Day Care,2021,Child care subsidy,1856216.0,CCS
+Family Day Care,2021,Child care subsidy,168121.0,CCS
+In Home Care,2021,Child care subsidy,7522.0,CCS
+Outside School Hours Care,2021,Child care subsidy,223115.0,CCS
+Centre-based Day Care,2022,Child care subsidy,2093873.0,CCS
+Family Day Care,2022,Child care subsidy,164982.0,CCS
+In Home Care,2022,Child care subsidy,3863.0,CCS
+Outside School Hours Care,2022,Child care subsidy,238086.0,CCS
+Centre-based Day Care,2023,Child care subsidy,2332877.0,CCS
+Family Day Care,2023,Child care subsidy,162227.0,CCS
+In Home Care,2023,Child care subsidy,3726.0,CCS
+Outside School Hours Care,2023,Child care subsidy,261109.0,CCS
+Centre-based Day Care,2024,Child care subsidy,2967916.0,CCS
+Family Day Care,2024,Child care subsidy,180625.0,CCS
+In Home Care,2024,Child care subsidy,4426.0,CCS
+Outside School Hours Care,2024,Child care subsidy,340776.0,CCS
+Centre-based Day Care,2021,additional child care subsidy,23552.0,ACCS
+Family Day Care,2021,additional child care subsidy,1078.0,ACCS
+In Home Care,2021,additional child care subsidy,1975.0,ACCS
+Outside School Hours Care,2021,additional child care subsidy,1871.0,ACCS
+Centre-based Day Care,2022,additional child care subsidy,122189.0,ACCS
+Family Day Care,2022,additional child care subsidy,4679.0,ACCS
+In Home Care,2022,additional child care subsidy,5270.0,ACCS
+Outside School Hours Care,2022,additional child care subsidy,9823.0,ACCS
+Centre-based Day Care,2023,additional child care subsidy,122174.0,ACCS
+Family Day Care,2023,additional child care subsidy,4407.0,ACCS
+In Home Care,2023,additional child care subsidy,4279.0,ACCS
+Outside School Hours Care,2023,additional child care subsidy,11415.0,ACCS
+Centre-based Day Care,2024,additional child care subsidy,134743.0,ACCS
+Family Day Care,2024,additional child care subsidy,4701.0,ACCS
+In Home Care,2024,additional child care subsidy,4319.0,ACCS
+Outside School Hours Care,2024,additional child care subsidy,13072.0,ACCS
